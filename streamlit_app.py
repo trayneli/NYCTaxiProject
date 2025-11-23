@@ -26,7 +26,7 @@ if "page" not in st.session_state:
     st.session_state.page = "EDA"
 
 # Sidebar navigation
-st.sidebar.title("Navigation")
+#st.sidebar.title("")
 
 if st.sidebar.button("EDA", use_container_width=True):
     st.session_state.page = "EDA"
@@ -40,9 +40,9 @@ if st.sidebar.button("Ride Predictions (LSTM)", use_container_width=True):
 if st.sidebar.button("Fare Predictions", use_container_width=True):
     st.session_state.page = "Fare"
 
-st.sidebar.caption("NYC Taxi Analytics Dashboard Pages")
+#st.sidebar.caption("")
 
-#st.title("NYC Taxi Analytics Dashboard")
+#st.title("")
 
 if st.session_state.page == "EDA":
     st.markdown("### Exploratory Data Analysis")
@@ -51,12 +51,12 @@ if st.session_state.page == "EDA":
 
 elif st.session_state.page == "Efficiency":
     st.markdown("### Efficiency Analysis")
-    st.caption("Revenue trends and sales performance")
+    st.caption("Efficiency Score and Ride Quality Score (RQS) calculations compared across different Taxi Ride characteristics, including trip time, trip purpose, trip route, trip speed and factors contributing to overall ride quality and efficiency")
     components.iframe(embed_url2, width=1200, height=1500, scrolling=True)
 
 elif st.session_state.page == "LSTM":
-    st.markdown("### Taxi Ride Predictions: LSTM")
-    st.caption("LSTM-based ride demand predictions")
+    st.markdown("### Taxi Demand Forecasting")
+    st.caption("LSTM Taxi demand predictions")
     components.iframe(embed_url, width=1200, height=800, scrolling=True)
 
 elif st.session_state.page == "Fare":
