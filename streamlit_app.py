@@ -6,7 +6,8 @@ st.set_page_config(layout="wide")
 st.title("NYC Taxi Analytics Dashboard")
 
 tableau_url="https://public.tableau.com/views/Taxi_Demand_and_Vendor_EDA_Final/FinalDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+#tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2"
 
 embed_url = f"{tableau_url}&:embed=yes&:showVizHome=no&:toolbar=top"
 embed_url2 = f"{tableau_url2}&:embed=yes&:showVizHome=no&:toolbar=top"
@@ -22,7 +23,7 @@ with tab1:
 with tab2:
     st.markdown("### Efficiency Analysis")
     st.caption("Revenue trends and sales performance")
-    components.iframe(embed_url2, width=1000, height=1500, scrolling=True)
+    components.iframe(embed_url2, width=1000, height=1200, scrolling=True)
 
 with tab3:
     st.markdown("### Taxi Ride Predictions: LSTM")
