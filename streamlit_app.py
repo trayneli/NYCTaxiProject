@@ -56,7 +56,7 @@ elif st.session_state.page == "Efficiency":
 
 elif st.session_state.page == "LSTM":
     st.markdown("### Taxi Demand Forecasting")
-    st.caption("LSTM Taxi demand predictions")
+    st.caption("Taxi demand predictions")
     components.iframe(embed_url, width=1200, height=800, scrolling=True)
 
 elif st.session_state.page == "Fare":
