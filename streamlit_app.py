@@ -22,7 +22,7 @@ with tab1:
 with tab2:
     st.markdown("### Efficiency Analysis")
     st.caption("Revenue trends and sales performance")
-    components.iframe(embed_url2, width=1200, height=1500, scrolling=True)
+    components.iframe(embed_url2, width=1000, height=1500, scrolling=True)
 
 with tab3:
     st.markdown("### Taxi Ride Predictions: LSTM")
