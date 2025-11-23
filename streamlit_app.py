@@ -52,13 +52,13 @@ if st.session_state.page == "EDA":
     components.iframe(embed_url, width=1200, height=3500, scrolling=True)
 
 elif st.session_state.page == "Efficiency":
-    st.markdown("### Efficiency Analysis")
+    st.markdown("### Taxi Efficiency Analysis")
     st.caption("Efficiency Score and Ride Quality Score (RQS) calculations compared across different Taxi Ride characteristics, including trip time, trip purpose, trip route, trip speed and factors contributing to overall ride quality and efficiency")
     components.iframe(embed_url2, width=1200, height=1500, scrolling=True)
 
 elif st.session_state.page == "LSTM":
     st.markdown("### Taxi Demand Forecasting")
-    st.caption("Taxi demand predictions")
+    st.caption("Hourly taxi demand forecast across NYC boroughs. Blue shows actual July 2025 demand, orange displays August 2025 predictions. The NeuralProphet model captures daily patterns with morning/evening peaks, weekly cycles, and overnight lows.")
     components.iframe(embed_url3, width=1200, height=800, scrolling=True)
 
 elif st.session_state.page == "Fare":
