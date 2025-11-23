@@ -47,7 +47,7 @@ st.title("NYC Taxi Analytics Dashboard")
 if st.session_state.page == "EDA":
     st.markdown("### Exploratory Data Analysis")
     st.caption("EDA Analysis for NYC Taxi Data")
-    components.iframe(embed_url, width=1200, height=800, scrolling=True)
+    components.iframe(embed_url, width=1200, height=2000, scrolling=True)
 
 elif st.session_state.page == "Efficiency":
     st.markdown("### Efficiency Analysis")
@@ -65,27 +65,25 @@ elif st.session_state.page == "Fare":
     components.iframe(embed_url, width=1200, height=800, scrolling=True)
 
 
-## Pages for dashboards
-tab1, tab2, tab3, tab4 = st.tabs(["EDA", "Efficiency Analysis", "Taxi Ride Predictions: LSTM", "Taxi Fare Predictions"])
+# ## Pages for dashboards
+# tab1, tab2, tab3, tab4 = st.tabs(["EDA", "Efficiency Analysis", "Taxi Ride Predictions: LSTM", "Taxi Fare Predictions"])
 
+# with tab1:
+#     st.markdown("### EDA")
+#     st.caption("EDA Analysis for NYC Taxi Data")
+#     components.iframe(embed_url, width=1200, height=1500, scrolling=False)
 
+# with tab2:
+#     st.markdown("### Efficiency Analysis")
+#     st.caption("Revenue trends and sales performance")
+#     components.iframe(embed_url2, width=1100, height=800, scrolling=False)
 
-with tab1:
-    st.markdown("### EDA")
-    st.caption("EDA Analysis for NYC Taxi Data")
-    components.iframe(embed_url, width=1200, height=1500, scrolling=False)
+# with tab3:
+#     st.markdown("### Taxi Ride Predictions: LSTM")
+#     st.caption("Taxi LSTTM Predictions")
+#     components.iframe(embed_url, width=1200, height=1500, scrolling=False)
 
-with tab2:
-    st.markdown("### Efficiency Analysis")
-    st.caption("Revenue trends and sales performance")
-    components.iframe(embed_url2, width=1100, height=800, scrolling=False)
-
-with tab3:
-    st.markdown("### Taxi Ride Predictions: LSTM")
-    st.caption("Taxi LSTTM Predictions")
-    components.iframe(embed_url, width=1200, height=1500, scrolling=False)
-
-with tab4:
-    st.markdown("### Taxi Fare Predictions")
-    st.caption("Taxi Fare Predictions")
-    components.iframe(embed_url, width=1200, height=1500, scrolling=False)
+# with tab4:
+#     st.markdown("### Taxi Fare Predictions")
+#     st.caption("Taxi Fare Predictions")
+#     components.iframe(embed_url, width=1200, height=1500, scrolling=False)
