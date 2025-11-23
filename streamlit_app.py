@@ -7,7 +7,7 @@ st.title("NYC Taxi Analytics Dashboard")
 
 tableau_url="https://public.tableau.com/views/Taxi_Demand_and_Vendor_EDA_Final/FinalDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 #tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2"
+tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 embed_url = f"{tableau_url}&:embed=yes&:showVizHome=no&:toolbar=top"
 embed_url2 = f"{tableau_url2}&:embed=yes&:showVizHome=no&:toolbar=top"
