@@ -2,6 +2,16 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
+st.markdown("""
+    <style>
+    .stTabs [data-baseweb="tab-panel"] {
+        overflow: visible;
+    }
+    iframe {
+        width: 100% !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 st.title("NYC Taxi Analytics Dashboard")
 
@@ -23,7 +33,7 @@ with tab1:
 with tab2:
     st.markdown("### Efficiency Analysis")
     st.caption("Revenue trends and sales performance")
-    components.iframe(embed_url2, width=1500, height=1800, scrolling=True)
+    components.iframe(embed_url2, width=1100, height=800, scrolling=True)
 
 with tab3:
     st.markdown("### Taxi Ride Predictions: LSTM")
