@@ -19,8 +19,10 @@ tableau_url="https://public.tableau.com/views/Taxi_Demand_and_Vendor_EDA_Final/F
 #tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 tableau_url2 = "https://public.tableau.com/views/NYCTaxiEfficiency/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
+tableau_url3="https://public.tableau.com/views/Demand_forecasting_17639297095930/Dashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 embed_url = f"{tableau_url}&:embed=yes&:showVizHome=no&:toolbar=top"
 embed_url2 = f"{tableau_url2}&:embed=yes&:showVizHome=no&:toolbar=top"
+embed_url3=f"{tableau_url3}&:embed=yes&:showVizHome=no&:toolbar=top"
 
 if "page" not in st.session_state:
     st.session_state.page = "EDA"
@@ -57,7 +59,7 @@ elif st.session_state.page == "Efficiency":
 elif st.session_state.page == "LSTM":
     st.markdown("### Taxi Demand Forecasting")
     st.caption("Taxi demand predictions")
-    components.iframe(embed_url, width=1200, height=800, scrolling=True)
+    components.iframe(embed_url3, width=1200, height=800, scrolling=True)
 
 elif st.session_state.page == "Fare":
     st.markdown("### Taxi Fare Predictions")
