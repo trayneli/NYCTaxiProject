@@ -34,7 +34,7 @@ if st.sidebar.button("EDA", use_container_width=True):
 if st.sidebar.button("Efficiency Analysis", use_container_width=True):
     st.session_state.page = "Efficiency"
 
-if st.sidebar.button("Ride Predictions (LSTM)", use_container_width=True):
+if st.sidebar.button("Demand Forecasting", use_container_width=True):
     st.session_state.page = "LSTM"
 
 if st.sidebar.button("Fare Predictions", use_container_width=True):
