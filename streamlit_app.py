@@ -40,14 +40,14 @@ if st.sidebar.button("Ride Predictions (LSTM)", use_container_width=True):
 if st.sidebar.button("Fare Predictions", use_container_width=True):
     st.session_state.page = "Fare"
 
-st.sidebar.caption("NYC Taxi Analytics Dashboard")
+st.sidebar.caption("NYC Taxi Analytics Dashboard Pages")
 
 #st.title("NYC Taxi Analytics Dashboard")
 
 if st.session_state.page == "EDA":
     st.markdown("### Exploratory Data Analysis")
     st.caption("EDA Analysis for NYC Taxi Data")
-    components.iframe(embed_url, width=1200, height=2800, scrolling=True)
+    components.iframe(embed_url, width=1200, height=3500, scrolling=True)
 
 elif st.session_state.page == "Efficiency":
     st.markdown("### Efficiency Analysis")
