@@ -58,7 +58,7 @@ elif st.session_state.page == "Efficiency":
 
 elif st.session_state.page == "LSTM":
     st.markdown("### Taxi Demand Forecasting")
-    st.caption("Hourly taxi demand forecast across NYC boroughs. Blue shows actual July 2025 demand, orange displays August 2025 predictions. The NeuralProphet model captures daily patterns with morning/evening peaks, weekly cycles, and overnight lows.")
+    st.caption("Hourly taxi demand forecast across NYC boroughs. The blue shows actual July 2025 demand, orange displays August 2025 predictions. The NeuralProphet model captures daily patterns with morning/evening peaks, weekly cycles, and overnight lows.")
     components.iframe(embed_url3, width=1200, height=800, scrolling=True)
 
 elif st.session_state.page == "Fare":
